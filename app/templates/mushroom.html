@@ -1,0 +1,25 @@
+<!-- templates/mushroom.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ mushroom.name }} 정보</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div>
+  <h1>🍄 {{ mushroom.name }}</h1>
+  <h3>레벨: {{ mushroom.level }}</h3>
+<!--  <img src="{{ mushroom.image_url or '/static/default.png' }}" alt="버섯 이미지" width="200"/>-->
+  <h5>성공확률 : {{mushroom.success_rate}}</h5>
+  <form action="/mushroom/{{ mushroom.id }}/upgrade" method="post">
+    <button type="submit">강화하기</button>
+  </form>
+
+  <form action="/mushroom/{{ mushroom.id }}/delete" method="post" style="margin-top: 10px;">
+    <button type="submit">삭제하기</button>
+  </form>
+  <a href="/">← 목록으로</a>
+</div>
+</body>
+</html>

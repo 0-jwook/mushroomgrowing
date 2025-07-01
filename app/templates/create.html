@@ -1,0 +1,24 @@
+<!-- templates/create.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>버섯 만들기</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div>
+  <h1>🆕 버섯 만들기</h1>
+
+  <form action="/create" method="post">
+    <label for="name">버섯 이름:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">생성</button>
+  </form>
+
+  <br>
+  <a href="/">← 목록으로 돌아가기</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* static/style.css */
+
+/* 전체 페이지 중앙 정렬 */
+body{
+  background-color: #f7f7f7;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 0;
+}
+
+form{
+    font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/* 전체 컨텐츠 박스 */
+div{
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 20px violet;
+}
+
+/* 제목 */
+h1, h2, h3, p{
+  text-align: center;
+  color: #333;
+}
+
+/* 버튼 */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* 입력 필드 */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* 링크 */
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}

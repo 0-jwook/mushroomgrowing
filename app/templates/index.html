@@ -1,0 +1,34 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>내 버섯들</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div>
+  <h1>🍄 내 버섯 리스트</h1>
+
+  <a href="/create">
+    <button>➕ 버섯 만들기</button>
+  </a>
+
+  <hr />
+
+  {% if mushrooms %}
+    <ul>
+      {% for mushroom in mushrooms %}
+        <li>
+          <a href="/mushroom/{{ mushroom.id }}">
+            {{ mushroom.name }} (Lv.{{ mushroom.level }})
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>버섯이 없습니다.</p>
+  {% endif %}
+</div>
+</body>
+</html>
